@@ -10,3 +10,13 @@ mysql> flush privileges;
 
 5.退出 
 mysql> quit ;
+
+
+
+
+6.数据库设置初始密码
+
+use mysql ;
+update user set password=password("new_pass") where user="root"; 
+flush privileges; 
+exit ;
